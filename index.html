@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="reset.css">
+  <title>Formulario</title>
+</head>
+
+<body>
+
+  <main class="main">
+    <form id="emailForm" class="container">
+      <div class="text">
+        <h1 class="title">Stay updated!</h1>
+        <p class="paragraph paragraph-one">Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="paragraph-icon">
+          <img class="icon-list" src="./assets/images/icon-list.svg" alt="">
+          <p class="paragraph">Product discovery and building what matters</p>
+        </div>
+        <div class="paragraph-icon">
+          <img class="icon-list" src="./assets/images/icon-list.svg" alt="">
+          <p class="paragraph">Measuring to ensure updates are a success</p>
+        </div>
+        <div class="paragraph-icon">
+          <img class="icon-list" src="./assets/images/icon-list.svg" alt="">
+          <p class="paragraph">And much more!</p>
+        </div>
+        <label  class="label form-control">Email address
+          <input autocomplete="on" name="email" type="email" class="email" id="emailInput" placeholder="email@company.com"> <br>
+          <small>error</small>
+        </label> <br>
+        
+
+        <button onclick="mostrarDiv()" id="botao" class="button">Subscribe to monthly newsletter</button>
+
+        <dialog class="modal" style="display: none;" id="pop-ups">
+          <img class="icon-list icon-pop" src="./assets/images/icon-list.svg" alt="">
+          <h2>Thanks for subscribing!</h2>
+          <p>A confirmation email has been sent to <strong>ash@loremcompany.com.</strong> 
+            Please open it and click the button inside to confirm your subscription.
+          </p>
+          <button class="btn-fechar" onclick="closeDiv()" id="fechar">Dismiss message</button>
+        </dialog>
+
+      </div>
+      <div class="image">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+      </div>
+      
+        
+      </div>
+    </form>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Alex Santos</a>.
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
